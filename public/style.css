@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(196, 243, 173);
+}
+
+body{
+    counter-reset: Serial;  
+}
+
+.container{
+    height: 100vh;
+    text-align: center;
+    /* justify-content: center; */
+    margin-top: 4%;
+}
+
+.container .box{
+    /* margin-top: 10%; */
+    margin: 15% auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+.customer{
+    display: flex;
+    justify-content: center;
+}
+
+.profile-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+tr td:first-child:before
+{
+  counter-increment: Serial;      /* Increment the Serial counter */
+  content: counter(Serial); /* Display the counter */
+}
+
+/* #btn-1{
+    height: 60px;
+    width: 300px;
+    /* text-align: center;
+    /* padding: auto; */
+    text-justify: center;
+} */ */
