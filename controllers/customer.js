@@ -67,7 +67,8 @@ exports.addCustomer = async(req,res)=>{
         })
         
     } catch (error) {
-
+        
+        console.log("ram"),
         res.status(500).json({
             success: false,
             message: error.message

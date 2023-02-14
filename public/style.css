@@ -3,10 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     background-color: rgb(196, 243, 173);
+    
 }
 
 body{
     counter-reset: Serial;  
+    
 }
 
 .container{
@@ -14,6 +16,10 @@ body{
     text-align: center;
     /* justify-content: center; */
     margin-top: 4%;
+    background-image: url(sfs.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .container .box{
@@ -24,7 +30,13 @@ body{
     justify-content: space-evenly;
 }
 
-
+.custom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    
+}
 
 .customer{
     display: flex;
